@@ -1,0 +1,300 @@
+.headtitle
+	+fs(36rem)
+	font-weight: 500
+	text-transform: uppercase
+	+media-breakpoint-down(lg)
+		+fs(28rem)
+	+media-breakpoint-down(xs)
+		+fs(24rem)
+.headdes 
+	+fs(18rem)
+	font-weight: 400
+	+media-breakpoint-down(lg)
+		+fs(16rem)
+	+media-breakpoint-down(xs)
+		+fs(14rem)
+.home-event
+	height: 100%
+	margin-bottom: 30px
+	.event
+		height: 100%
+		figure
+			height: 100%
+			+pos(rel,null)
+			overflow: hidden
+			.eventimg
+				display: block
+				height: 250px
+			figcaption
+				+pos(abs, null 0 0 0)
+				padding: 30px 15px 15px
+				+transform(translateY(calc(100% - 90px)))
+				background: linear-gradient(color-rgba($black,0),color-rgba($black,0.5))
+				+transition(all,0.3s)
+				.eventname
+					+fs(20rem)
+					font-weight: 500
+					background: $pink
+					padding: 10px
+					display: inline-block
+					margin-bottom: 15px
+					a 
+						color: $white
+				.eventdes
+					color: $white
+					+fs(16rem)
+					+transform(translateY)
+			&:hover
+				figcaption
+					+transform(translateY(0%))
+.home-ads
+	margin-bottom: 30px
+	+media-breakpoint-down(sm)
+		margin-bottom: 0
+	.banner-sale
+		height: 100%
+		+media-breakpoint-down(sm)
+			margin-bottom: 30px
+			height: unset
+		+media-breakpoint-down(xs)
+			margin-bottom: 10px
+		.slick-list, .slick-track
+			height: 100%
+			+media-breakpoint-down(sm)
+				height: unset
+		.item
+			height: 100%
+			+media-breakpoint-down(sm)
+				height: unset
+		a 
+			display: block
+			height: 200px
+			+media-breakpoint-down(md)
+				height: 100px
+			+media-breakpoint-down(sm)
+				height: 180px
+			+media-breakpoint-down(xs)
+				height: 110px
+.home-news
+	+flexbox
+	flex-wrap: wrap
+	margin-bottom: 30px
+	background: $pink
+	+media-breakpoint-down(xs)
+		margin-bottom: 10px
+	.label
+		text-transform: uppercase
+		color: $white
+		font-weight: 500
+		line-height: 40px
+		padding: 0px 20px
+		width: 100px
+	.TickerNews
+		width: calc(100% - 100px)
+	.ti_wrapper
+		width: 100%
+		position: relative
+		overflow: hidden
+	.ti_slide
+		width: 30000px
+		position: relative
+		left: 0
+		top: 0
+		// white-space: nowrap
+	.ti_content
+		width: 8000px
+		position: relative
+		// white-space: nowrap
+		float: left
+	.newsitem
+		float: left
+		padding: 10px 0
+	.newsitem a
+		display: block
+		color: $white
+		padding: 0px 10px
+		line-height: 20px
+		border-left: 1px solid color-rgba($white,0.5)
+.hot-product
+	padding: 15px
+	margin-bottom: 30px
+	+media-breakpoint-down(lg)
+		padding: 10px
+	.headtitle
+		margin: 10px 0 5px
+	.headdes
+		margin-bottom: 20px
+	.headtitle, .headdes
+		text-align: center
+		color: $white
+		text-shadow: 1px 1px 1px color-rgba($black,0.25)
+	.hotproduct-slide
+		overflow: hidden
+		.item
+			padding: 0.5px
+
+.product-category
+	margin-bottom: 30px
+	.category-img
+		display: block
+		width: 33.33%
+		padding: 50px 25px
+		color: $black
+		+pos(rel,null)
+		+media-breakpoint-down(lg)
+			width: 21%
+			padding: 15px
+		+media-breakpoint-down(md)
+			width: 100%
+			padding: 80px 0
+			// height: 100px
+		+media-breakpoint-down(xs)
+			padding: 30px 0
+		.category-overlay
+			+pos(abs, 50% null 0 0)
+			right: 0
+			background: linear-gradient(color-rgba($black,0),color-rgba($black,0.5))
+			// opacity: 0.3
+			z-index: 1
+			// display: none
+			+media-breakpoint-down(md)
+				display: block
+		.category-name
+			+fs(24rem)
+			text-transform: uppercase
+			font-weight: 700
+			// opacity: 0.65
+			margin-bottom: 5px
+			+transition(all,0.3s)
+			+pos(abs,null 20px 15px 20px)
+			z-index: 2
+			color: $white
+			+media-breakpoint-down(lg)
+				+fs(20rem)
+			+media-breakpoint-down(md)
+				opacity: 1
+				text-align: center
+			&:after
+				content: "\e876"
+				font-family: 'linearicons-free'
+				margin-left: 10px
+		.amount
+			+fs(16rem)
+			opacity: 0.65
+			+pos(rel,null)
+			z-index: 1
+			display: none
+			+media-breakpoint-down(lg)
+				+fs(14rem)
+			+media-breakpoint-down(md)
+				color: $white
+				// opacity: 1
+				text-align: center
+		&:hover
+			.category-name
+				letter-spacing: 1px
+	.product-list
+		width: calc(100% - 33.33%)
+		background: $white
+		+media-breakpoint-down(lg)
+			width: calc(100% - 21%)
+		+media-breakpoint-down(md)
+			width: 100%
+	.category-link
+		white-space: nowrap
+		border-bottom: 1px solid darken($white,10%)
+		overflow: auto
+		background: $white
+		ul 
+			li 
+				+fs(15rem)
+				line-height: 34px
+				display: inline-block
+				padding: 0px 15px
+				a 
+					display: block
+					color: $main
+					&:hover
+						color: $blue
+	.category-slide, .category-slide1
+		overflow: hidden
+		.item
+			border-left: 1px solid darken($white,10%)
+			margin-left: -1px
+	.row
+		margin: 0px -5px
+	.col-xs-12
+		padding: 0px 5px
+	.category-col
+		margin-bottom: 10px
+		figure
+			+pos(rel,null)
+			+bor-rad(5px)
+			overflow: hidden
+			.img
+				display: block
+				+transition(all,0.3s)
+				img 
+					width: 100%
+					+bor-rad(5px)
+			figcaption
+				+pos(abs, 50% 0 0 0)
+				padding: 5px 10px
+				background: linear-gradient(color-rgba($black,0),color-rgba($black,0.5))
+				color: $black
+				.name
+					+fs(16rem)
+					text-transform: uppercase
+					font-weight: 700
+					float: left
+					+pos(abs, null 10px 10px 10px)
+					color: $white
+					+media-breakpoint-down(lg)
+						float: none
+						+fs(15rem)
+					a 
+						color: $white
+					&:hover
+						letter-spacing: 1px
+					&:after
+						content: "\e876"
+						font-family: 'linearicons-free'
+						margin-left: 5px
+				.amount
+					+fs(14rem)
+					font-weight: 400
+					opacity: 0.65
+					float: right
+					+media-breakpoint-down(lg)
+						float: none
+						+fs(13rem)
+			&:hover
+				box-shadow: 2px 2px 5px color-rgba($black,0.1)
+				figcaption
+					.name
+						letter-spacing: 1px
+// .welcome-banner
+// 	+pos(fix,0 null 0 0)
+// 	right: 0
+// 	z-index: 800
+// 	background: color-rgba($black,0.7)
+// 	+flexbox
+// 	justify-content: center
+// 	align-items: center
+// 	.banner-img
+// 		+pos(rel,null)
+// 		.btn-closeads
+// 			+pos(abs, 10px 10px null null)
+// 			width: 36px
+// 			height: 36px
+// 			+bor-rad(50%)
+// 			line-height: 40px
+// 			text-align: center
+// 			background: color-rgba($black,0.5)
+// 			color: $white
+// 			+fs(18rem)
+// 			cursor: pointer
+// 			.lnr
+// 				&:before
+// 					line-height: 1
+// 		img

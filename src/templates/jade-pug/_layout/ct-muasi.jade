@@ -1,0 +1,169 @@
+//- section.breadcrumb-wrap.clearfix
+	.container
+		ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Trang chủ
+				meta(itemprop='position', content='1')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Tài khoản
+				meta(itemprop='position', content='2')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Admin
+				meta(itemprop='position', content='3')
+section.cartstep.muasi.clearfix
+	.step.active
+		.number <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+		.name Đặt hàng
+	.step
+		.number <i class="fa fa-user" aria-hidden="true"></i>
+		.name Thông tin giao hàng
+	.step
+		.number <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+		.name Thanh toán
+	//- .step
+		.number <i class="fa fa-credit-card" aria-hidden="true"></i>
+		.name Hình thức thanh toán
+.container
+	.row.flex.flex-wrap
+		.col-xs-12.col-lg-3
+			section.user-sidebar.clearfix
+				.userinfo.clearfix
+					figure
+						a.user-img(href="#")
+							img(src="img/user.png", alt="")
+						figcaption
+							.title Tài khoản của
+							.user-name Siêu thị B
+							//- .user-rank <i class="fa fa-trophy" aria-hidden="true"></i> Thành viên vàng
+					a.btn-muasi(href="#") Đặt mua sỉ
+			nav.user-sidelink.clearfix
+				ul 
+					li.hvr-sweep-to-right
+						a(href="userpanel.html") Thông tin chung
+					li.hvr-sweep-to-right
+						a(href="userpanel1.html") Thông tin tài khoản
+					li.hvr-sweep-to-right
+						a(href="userpanel2.html") Số địa chỉ
+					//- li.hvr-sweep-to-right
+						//- a(href="#") Thông báo của tôi
+					li.hvr-sweep-to-right
+						a(href="userpanel3.html") Đơn hàng của tôi
+					li.hvr-sweep-to-right
+						a(href="userpanel4.html") Danh sách yêu thích
+					li.hvr-sweep-to-right
+						a(href="userpanel5.html") Quản lý điểm thưởng
+		.col-xs-12.col-lg-9
+			section.user-page.clearfix
+				h1.postname Đặt mua sỉ
+				.row.flex.flex-wrap
+					.col-xs-12
+						section.account-info.clearfix
+							//- h2.posttitle Thông tin tài khoản
+							//- a.link(href="userpanel1.html") Chỉnh sửa
+							//- .info-detail
+								.row.flex.flex-wrap
+									//- .col-xs-12.col-md-6
+										.group
+											.label(for="#") Họ và Tên:
+											.detail Admin
+										.group
+											.label(for="") Email:
+											.detail admin@cp.com.vn
+									.col-xs-12
+										.group.money
+											.label(for="") Tài khoản của quý khách hiện có:
+											.detail.point 50.000.000 đ
+										//- .group
+											.label(for="") Tiền thưởng:
+											.detail.point 5700 xu
+					//- .col-xs-12.col-md-6
+						section.coin-info.clearfix
+							.info-detail
+								.detail Bạn có 
+									strong 5700 
+									|điểm thưởng.
+								.detail Bạn có 
+									strong 5700 
+									|tiền thưởng.
+					.col-xs-12
+						section.cart-history.clearfix
+							//- h2.posttitle Các đơn hàng vừa đặt
+							//- a.link(href="userpanel3.html") Xem tất cả
+							.product-select
+								select
+									option Tất cả sản phẩm
+									option Thực phẩm tươi
+									option Thực phẩm chế biến
+									option Xúc xích
+									option Thủy sản chế biến
+							.table-responsive
+								table.table
+									thead
+										tr 
+											th Mã sản phẩm
+											th Tên sản phẩm
+											th Đơn giá
+											th Số lượng
+											th Tổng tiền
+									tbody
+										tr 
+											td 012301
+											td Thịt thăn
+											td 100.000đ/1kg
+											td 
+												.input-number
+													.btn-spin.btn-dec -
+													input(type="text", value="1")
+													.btn-spin.btn-inc +
+											td.total 100.000đ
+										tr 
+											td 012301
+											td Sườn non
+											td 100.000đ/1kg
+											td 
+												.input-number
+													.btn-spin.btn-dec -
+													input(type="text", value="1")
+													.btn-spin.btn-inc +
+											td.total 100.000đ
+										tr 
+											td 012301
+											td Thịt nọng
+											td 100.000đ/1kg
+											td 
+												.input-number
+													.btn-spin.btn-dec -
+													input(type="text", value="1")
+													.btn-spin.btn-inc +
+											td.total 100.000đ
+										tr  
+
+											td 012301
+											td Thịt đùi
+											td 100.000đ/1kg
+											td 
+												.input-number
+													.btn-spin.btn-dec -
+													input(type="text", value="1")
+													.btn-spin.btn-inc +
+											td.total 100.000đ
+										tr 
+											td 012301
+											td Thịt gà
+											td 100.000đ/1kg
+											td 
+												.input-number
+													.btn-spin.btn-dec -
+													input(type="text", value="1")
+													.btn-spin.btn-inc +
+											td.total 100.000đ
+								.text-xs-right
+									.totalmoney Thành tiền: 
+										strong 1.000.000đ
+									.payment-des Giá đã bao gồm VAT
+							.btnwrap.clearfix
+								a.btn-back(href="index.html") Về trang chủ
+								a.hvr-sweep-to-right.btn-continue(href="#") Tiến hành thanh toán

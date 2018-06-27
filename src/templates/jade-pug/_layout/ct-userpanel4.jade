@@ -1,0 +1,148 @@
+section.breadcrumb-wrap.clearfix
+	.container
+		ol.breadcrumb(itemscope='', itemtype='http://schema.org/BreadcrumbList')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books')
+					span(itemprop='name') Trang chủ
+				meta(itemprop='position', content='1')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Tài khoản
+				meta(itemprop='position', content='2')
+			li(itemprop='itemListElement', itemscope='', itemtype='http://schema.org/ListItem')
+				a(itemscope='', itemtype='http://schema.org/Thing', itemprop='item', href='https://example.com/books/sciencefiction')
+					span(itemprop='name') Admin
+				meta(itemprop='position', content='3')
+.container
+	.row.flex.flex-wrap
+		.col-xs-12.col-lg-3
+			section.user-sidebar.clearfix
+				.userinfo.clearfix
+					figure
+						a.user-img(href="#")
+							img(src="img/user.png", alt="")
+						figcaption
+							.title Tài khoản của
+							.user-name Admin
+							//- .user-rank <i class="fa fa-trophy" aria-hidden="true"></i> Thành viên vàng
+			nav.user-sidelink.clearfix
+				ul 
+					li.hvr-sweep-to-right
+						a(href="userpanel.html") Thông tin chung
+					li.hvr-sweep-to-right
+						a(href="userpanel1.html") Thông tin tài khoản
+					li.hvr-sweep-to-right
+						a(href="userpanel2.html") Số địa chỉ
+					//- li.hvr-sweep-to-right
+					//- 	a(href="#") Thông báo của tôi
+					li.hvr-sweep-to-right
+						a(href="userpanel3.html") Đơn hàng của tôi
+					li.hvr-sweep-to-right.active
+						a(href="userpanel4.html") Danh sách yêu thích
+					li.hvr-sweep-to-right
+						a(href="userpanel5.html") Quản lý điểm thưởng
+		.col-xs-12.col-lg-9
+			section.user-page.clearfix
+				h1.postname Danh sách yêu thích
+				.row.flex.flex-wrap
+					.col-xs-12
+						section.wishlist.clearfix
+							.product-list.flex.flex-wrap.clearfix
+								.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+									.product-col
+										figure
+											a.product-img(href="#")
+												img(src="img/product/thitthan.jpg", alt="alt")
+												//- .promotion
+													.new
+														span Mới
+													.hot
+														span hot
+													.sale 
+														span -15%
+											figcaption
+												h3.product-name
+													a(href="#") Thịt thăn heo
+												.product-des 500gr
+												.product-price.clearfix
+													.new 120.000đ
+													.old 150.000đ
+												.btn-wrap
+													a.btn-addtocart(href="#") Thêm vào giỏ
+													a.btn-remove(href="#") <i class="fa fa-trash-o" aria-hidden="true"></i>
+								.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+									.product-col
+										figure
+											a.product-img(href="#")
+												img(src="img/product/cotlet.jpg", alt="alt")
+												//- .promotion
+													.new
+														span Mới
+													.hot
+														span hot
+													.sale 
+														span -15%
+											figcaption
+												h3.product-name
+													a(href="#") Thịt cốt lết
+												.product-des 500gr
+												.product-price.clearfix
+													.new 120.000đ
+													.old 150.000đ
+												.btn-wrap
+													a.btn-addtocart(href="#") Thêm vào giỏ
+													a.btn-remove(href="#") <i class="fa fa-trash-o" aria-hidden="true"></i>
+								.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+									.product-col
+										figure
+											a.product-img(href="#")
+												img(src="img/product/mongheo.jpg", alt="alt")
+												.promotion
+													//- .new
+														span Mới
+													//- .hot
+														span hot
+													.sale 
+														span -15%
+											figcaption
+												h3.product-name
+													a(href="#") Móng heo
+												.product-des 500gr
+												.product-price.clearfix
+													.new 120.000đ
+													.old 150.000đ
+												.btn-wrap
+													a.btn-addtocart(href="#") Thêm vào giỏ
+													a.btn-remove(href="#") <i class="fa fa-trash-o" aria-hidden="true"></i>
+								.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+									.product-col
+										figure
+											a.product-img(href="#")
+												img(src="img/product/suonnon.jpg", alt="alt")
+												.promotion
+													//- .new
+														span Mới
+													//- .hot
+														span hot
+													//- .sale 
+														span -15%
+											figcaption
+												h3.product-name
+													a(href="#") Sườn non
+												.product-des 500gr
+												.product-price.clearfix
+													.new 120.000đ
+													.old 150.000đ
+												.btn-wrap
+													a.btn-addtocart(href="#") Thêm vào giỏ
+													a.btn-remove(href="#") <i class="fa fa-trash-o" aria-hidden="true"></i>
+							//- .pages.text-xs-center
+								ul.pagination
+									li.active
+										a(href="#") 1
+									li 
+										a(href="#") 2
+									li 
+										a(href="#") 3
+									li 
+										a(href="#") 4

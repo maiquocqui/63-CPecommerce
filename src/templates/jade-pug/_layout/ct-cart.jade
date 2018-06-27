@@ -1,0 +1,184 @@
+section.cartstep.clearfix
+	.container
+		.step.active
+			.number <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			.name Giỏ hàng
+		.step
+			.number <i class="fa fa-user" aria-hidden="true"></i>
+			.name Đăng nhập
+		.step
+			.number <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+			.name Thông tin giao hàng
+		.step
+			.number <i class="fa fa-credit-card" aria-hidden="true"></i>
+			.name Hình thức thanh toán
+.container
+	.row.flex.flex-wrap
+		.col-xs-12
+			section.cart-page.clearfix
+				.carttitle Giỏ hàng của bạn (<strong>2</strong> sản phẩm)
+				//- .cartnotice Giỏ hàng có chứa sản phẩm được tham gia chương trình khuyến mãi. 
+					a(target="_blank" href="#") Xem chi tiết
+					.removenotice
+				table.carttable
+					thead
+						tr 
+							th Sản phẩm
+							th Đơn giá
+							th Số lượng
+							th Thành tiền
+					tbody
+						tr 
+							td.product 
+								a.productimg(href="#")
+									img(src="img/product/thitthan.jpg", alt="")
+								.productdetail
+									h3.productname
+										a(href="#") Thịt thăn
+									.productsize Khối lượng 
+										strong 1kg
+									a.removeproduct(href="#") Bỏ sản phẩm
+							td.price
+								.new 500.000đ
+								.old 600.000đ
+								.sale Giảm 10%
+							td.amount
+								.input-number
+									.btn-spin.btn-dec -
+									input(type="text", value="1")
+									.btn-spin.btn-inc +
+							td.total 500.000đ
+						tr 
+							td.product 
+								a.productimg(href="#")
+									img(src="img/product/suonnon.jpg", alt="")
+								.productdetail
+									h3.productname
+										a(href="#") Sườn non
+									.productsize Khối lượng 
+										strong 1kg
+									a.removeproduct(href="#") Bỏ sản phẩm
+							td.price
+								.new 500.000đ
+								.old 600.000đ
+								.sale Giảm 10%
+							td.amount
+								.input-number
+									.btn-spin.btn-dec -
+									input(type="text", value="1")
+									.btn-spin.btn-inc +
+							td.total 500.000đ
+				.totalamount Thành tiền: 
+					strong 1.000.000đ
+				.payment-des Giá đã bao gồm VAT
+				.btnwrap.clearfix
+					a.btn-back(href="index.html") Tiếp tục mua hàng
+					a.hvr-sweep-to-right.btn-continue(href="cart1.html") Tiến hành thanh toán
+				section.cart-lastview.clearfix
+					h3.carttitle Sản phẩm đã xem
+					.product-list.flex.flex-wrap.clearfix
+						.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+							.product-col
+								figure
+									a.product-img(href="#")
+										img(src="img/product/thitthan.jpg", alt="alt")
+										//- .promotion
+											.new
+												span Mới
+											.hot
+												span hot
+											.sale 
+												span -15%
+									figcaption
+										h3.product-name
+											a(href="#") Thịt thăn heo
+										.product-des 500gr
+										.product-price.clearfix
+											.new 120.000đ
+											.old 150.000đ
+										.btn-wrap
+											a.btn-addtocart(href="#") Thêm vào giỏ
+						.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+							.product-col
+								figure
+									a.product-img(href="#")
+										img(src="img/product/cotlet.jpg", alt="alt")
+										//- .promotion
+											.new
+												span Mới
+											.hot
+												span hot
+											.sale 
+												span -15%
+									figcaption
+										h3.product-name
+											a(href="#") Thịt cốt lết
+										.product-des 500gr
+										.product-price.clearfix
+											.new 120.000đ
+											.old 150.000đ
+										.btn-wrap
+											a.btn-addtocart(href="#") Thêm vào giỏ
+						.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+							.product-col
+								figure
+									a.product-img(href="#")
+										img(src="img/product/mongheo.jpg", alt="alt")
+										.promotion
+											//- .new
+												span Mới
+											//- .hot
+												span hot
+											.sale 
+												span -15%
+									figcaption
+										h3.product-name
+											a(href="#") Móng heo
+										.product-des 500gr
+										.product-price.clearfix
+											.new 120.000đ
+											.old 150.000đ
+										.btn-wrap
+											a.btn-addtocart(href="#") Thêm vào giỏ
+						.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+							.product-col
+								figure
+									a.product-img(href="#")
+										img(src="img/product/suonnon.jpg", alt="alt")
+										.promotion
+											//- .new
+												span Mới
+											//- .hot
+												span hot
+											//- .sale 
+												span -15%
+									figcaption
+										h3.product-name
+											a(href="#") Sườn non
+										.product-des 500gr
+										.product-price.clearfix
+											.new 120.000đ
+											.old 150.000đ
+										.btn-wrap
+											a.btn-addtocart(href="#") Thêm vào giỏ
+						.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+							.product-col
+								figure
+									a.product-img(href="#")
+										img(src="img/product/trung.jpg", alt="alt")
+										.promotion
+											//- .new
+												span Mới
+											//- .hot
+												span hot
+											.sale 
+												span -15%
+									figcaption
+										h3.product-name
+											a(href="#") Trứng gà tươi
+										.product-des 10 quả
+										.product-price.clearfix
+											.new 20.000đ
+											.old 25.000đ
+										.btn-wrap
+											a.btn-addtocart(href="#") Thêm vào giỏ

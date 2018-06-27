@@ -1,0 +1,109 @@
+// CART STEP
+
+.cartstep
+	background: darken($white,0%)
+	margin: 0 0 40px
+	overflow: hidden
+	// +bor-rad(5px)
+	border-bottom: 1px solid darken($white,20%)
+	.container
+		// +flexbox
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			clear: both
+	.step
+		width: 25%
+		float: left
+		padding: 13px 0 14px 25px
+		+pos(rel,null)
+		// border: 1px solid darken($white,20%)
+		&:first-child
+		&:last-child
+		+media-breakpoint-down(md)
+			width: 100%
+			display: none
+		&:before
+			content: ''
+			display: block
+			width: 0
+			height: 0
+			border-top: 27px solid transparent
+			border-bottom: 27px solid transparent
+			border-right: 0 solid transparent
+			border-left: 16px solid darken($white,20%)
+			+pos(abs, -2px -1px null null)
+			+transform(translateX(15px))
+			z-index: 10
+		&:after
+			content: ''
+			display: block
+			width: 0
+			height: 0
+			border-top: 25px solid transparent
+			border-bottom: 25px solid transparent
+			border-right: 0 solid transparent
+			border-left: 15px solid darken($white,0%)
+			+pos(abs, 0px 0px null null)
+			+transform(translateX(15px))
+			z-index: 11
+		&:last-child
+			&:before, &:after
+				display: none
+		.number
+			display: inline-block
+			// width: 30px
+			// height: 30px
+			// line-height: 30px
+			// text-align: center
+			// background: darken($white,15%)
+			// color: $main
+			// +bor-rad(50px)
+			// +media-breakpoint-down(md)
+			// display: none
+		.name
+			display: inline-block
+			vertical-align: middle
+			padding-left: 10px
+			+media-breakpoint-down(md)
+			font-weight: bold
+			text-transform: uppercase
+			color: darken($white,60%)
+		&.active
+			// background: darken($white,10%)
+			+media-breakpoint-down(md)
+				display: block
+			&:after
+				// border-left-color: darken($white,10%)
+			.number
+				font-weight: bold
+				color: $red
+			.name
+				color: $red
+			&.finish
+				+media-breakpoint-down(md)
+					display: none
+		&.finish
+			// background: darken($white,10%)
+			&:after
+				// border-left-color: darken($white,10%)
+			+media-breakpoint-down(xs)
+				&:last-child
+					display: block
+			.number
+				display: inline-block
+				// background: darken($white,60%)
+				background: none
+				color: $green
+				+fs(0)
+				&:before
+					content: '\f00c'
+					font-family: 'fontawesome'
+					+fs(15rem)
+			.name
+				color: $green
+	&.muasi
+		border-top: 1px solid darken($white,20%)
+		.step
+			width: 33.33%

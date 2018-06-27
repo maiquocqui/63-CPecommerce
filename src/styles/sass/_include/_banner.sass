@@ -1,0 +1,291 @@
+.sidebarmenu
+	width: 240px
+	background: $white
+	margin-bottom: 40px
+	+pos(rel,null)
+	+media-breakpoint-down(lg)
+		display: none
+	.title
+		+fs(14rem)
+		font-weight: 500
+		text-transform: uppercase
+		color: $white
+		line-height: 40px
+		background: $pink
+		padding: 0px 10px
+		.fa
+			margin-right: 10px
+			line-height: 1
+			display: inline-block
+			vertical-align: middle
+			+fs(18rem)
+	.sidebarlink 
+		+media-breakpoint-down(lg)
+			padding: 10px
+		> li 
+			padding: 0px 5px
+			border-bottom: 1px solid color-rgba($white,0.1)
+			+transition(all,0.3s)
+			+media-breakpoint-down(lg)
+				+pos(rel,null)
+				border-bottom: 1px solid color-rgba($black,0.1)
+			> a 
+				display: flex
+				align-items: center
+				padding: 4px 10px
+				color: $main
+				+pos(rel,null)
+				z-index: 10
+				&:after
+					content: ''
+					display: block
+					width: 0px
+					height: 0px
+					border-top: 20px solid transparent
+					border-right: none
+					border-bottom: 20px solid transparent
+					border-left: 10px solid darken($white,0%)
+					+pos(abs, 0 -15px null null)
+					opacity: 0
+					+transition(all,0.3s)
+				.icon
+					width: 24px
+					height: 24px
+					background-position: bottom left
+					filter: grayscale(100%) brightness(100%)
+					+transition(all,0.3s)
+					+media-breakpoint-down(lg)
+						filter: grayscale(100%) brightness(50%)
+				.text
+					padding-left: 5px
+					+fs(13rem)
+					color: $main
+					+media-breakpoint-down(lg)
+						color: $bluegrey
+			.btn-showsub
+				display: none
+				color: $bluegrey
+				width: 260px
+				line-height: 40px
+				text-align: right
+				padding-right: 10px
+				+pos(abs, 0 null null 0)
+				z-index: 15
+				+media-breakpoint-down(lg)
+					display: block
+			.sub
+				+pos(abs, 40px null 0 100%)
+				z-index: 5
+				background: darken($white,5%)
+				width: 240px
+				padding: 5px 0
+				overflow: auto
+				visibility: hidden
+				opacity: 0
+				+media-breakpoint-down(lg)
+					+pos(fix, 90px null 0 0)
+					width: 280px
+					visibility: visible
+					opacity: 1
+					padding: 10px
+					overflow: auto
+					z-index: 20
+					background: darken($white,10%)
+					+transform(translateX(-100%))
+					+transition(all,0.5s)
+					&.open
+						+transform(translateX(0%))
+				.btn-closesub
+					display: none
+					line-height: 40px
+					color: $bluegrey
+					padding: 0px 15px
+					border-bottom: 1px solid color-rgba($black,0.1)
+					z-index: 5
+					+media-breakpoint-down(lg)
+						display: block
+				> ul 
+					> li 
+						padding: 0px 5px
+						+fs(13rem)
+						line-height: 32px
+						border-bottom: 1px solid color-rgba($black,0)
+						+media-breakpoint-down(lg)
+							border-bottom: 1px solid color-rgba($black,0.1)
+						> a 
+							display: block
+							color: $main
+							padding: 0px 10px
+			&:hover
+				+media-breakpoint-up(xl)
+					background: color-rgba($white,0.1)
+					a 
+						&:after
+							opacity: 1
+							border-left-color: darken($white,0%)
+						.icon
+							background-position: 0 -24px
+							filter: grayscale(0%) brightness(100%)
+						.text
+							color: $pink
+					.sub
+						visibility: visible
+						opacity: 1
+.bannerwrap
+	width: calc(100% - 240px)
+	margin-bottom: 40px
+	overflow: hidden
+	+media-breakpoint-down(lg)
+		width: 100%
+	+media-breakpoint-down(xs)
+		margin-bottom: 10px
+	+pos(rel,null)
+.welcome-banner
+	+pos(abs, 0 null 0 0)
+	right: 0
+	+transition(all,0.5s)
+	// -webkit-transition-delay: 5s
+	// -moz-transition-delay: 5s
+	// -ms-transition-delay: 5s
+	// transition-delay: 5s
+	z-index: 800
+	&.hide
+		+transform(scale3d(3,3,3))
+		visibility: hidden
+		opacity: 0
+	a 
+		+pos(abs, 0 null 0 0)
+		right: 0
+.banner
+	overflow: hidden
+	+pos(rel,null)
+	z-index: 2
+	a 
+		display: block
+	.bannerimg
+		display: block
+		height: 440px
+		+media-breakpoint-down(lg)
+			height: 400px
+		+media-breakpoint-down(md)
+			height: 350px
+		+media-breakpoint-down(sm)
+			height: 220px
+		+media-breakpoint-down(xs)
+			height: 180px
+	.slick-prev, .slick-next
+		+fs(0)
+		+pos(abs, 50% null null null)
+		+transform(translateY(-50%))
+		z-index: 5
+		width: 30px
+		height: 50px
+		background: color-rgba($white,0.3)
+		text-align: center
+		+transition(all,0.3s)
+		&:before
+			content: ''
+			font-family: 'fontawesome'
+			line-height: 50px
+			+fs(24rem)
+		&:hover
+			+media-breakpoint-up(xl)
+				width: 50px
+				background: $blue
+				color: $white
+		&:active
+			color: $pink
+	.slick-prev
+		left: -30px
+		+media-breakpoint-down(lg)
+			left: 0
+		&:before
+			content: '\f104'
+	.slick-next
+		right: -30px
+		+media-breakpoint-down(lg)
+			right: 0
+		&:before
+			content: '\f105'
+	&:hover
+		.slick-prev
+			left: 0
+		.slick-next
+			right: 0
+	.slick-dots
+		+pos(abs, null 50px 20px null)
+		+media-breakpoint-down(xs)
+			display: none !important
+		li 
+			display: inline-block
+			vertical-align: middle
+			width: 10px
+			height: 10px
+			border: 2px solid $white
+			+bor-rad(50%)
+			box-sizing: border-box
+			cursor: pointer
+			+transition(all,0.3s)
+			+ li 
+				margin-left: 10px
+			button
+				display: none
+			&.slick-active
+				background: $pink
+				border-color: $pink
+
+.bannerads
+	// padding: 15px
+	+bor-rad(5px)
+	overflow: hidden
+	.slick-prev,.slick-next
+		+pos(abs, 50% null null null)
+		+transform(translateY(-50%))
+		+fs(0)
+		width: 40px
+		height: 40px
+		line-height: 40px
+		text-align: center
+		+bor-rad(50%)
+		z-index: 5
+		color: $main
+		background: color-rgba($white,0.5)
+		&:before
+			content: ''
+			font-family: 'fontawesome'
+			+fs(24rem)
+		&:hover
+			background: $white
+			color: $green
+	.slick-prev
+		left: -50px
+		&:before
+			content: '\f104'
+	.slick-next
+		right: -50px
+		&:before
+			content: '\f105'
+	&:hover
+		.slick-prev
+			left: 10px
+		.slick-next
+			right: 10px
+	.slick-dots
+		+pos(abs, null 15px 15px null)
+		li 
+			display: inline-block
+			width: 30px
+			height: 5px
+			border: 1px solid $white
+			cursor: pointer
+			float: left
+			+ li 
+				margin-left: 5px
+			button
+				display: none
+			&.slick-active
+				background: $white
+				// border-color: $green
+
+.slick-slider
+	overflow: hidden

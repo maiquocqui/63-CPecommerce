@@ -1,0 +1,788 @@
+.container
+	.flex.flex-wrap.clearfix
+		section.product-sidebar.clearfix
+			.filter-wrap.filter-category.clearfix
+				.btn-closefilter <span class="lnr lnr-cross"></span>
+				.filter-group.brand-group.clearfix
+					.filter-title 
+						span Thương hiệu
+					.brand-logo
+						img(src="img/logo.png", alt="")
+				.filter-group.clearfix
+					.filter-title 
+						span Danh mục sản phẩm
+						//- .btn-reset <i class="fa fa-undo" aria-hidden="true"></i>
+					nav.filter-category.clearfix
+						ul
+							li.hassub.active
+								a(href="#") Thực phẩm
+								.btn-showsubfilter <i class="fa fa-angle-right" aria-hidden="true"></i>
+								.sub
+									ul 
+										li 
+											a(href="#") Bánh mỳ - Bánh ngọt
+										li 
+											a(href="#") Thực phẩm tươi
+										li 
+											a(href="#") Trứng
+										li 
+											a(href="#") Kem - Sữa & Sản phẩm từ sữa
+										li 
+											a.active(href="#") Rua - Củ - Quả
+										li 
+											a(href="#") Thực phẩm đông lạnh & bảo quản mát
+										li 
+											a(href="#") Đồ hộp - Đồ lọ
+										li 
+											a(href="#") Thực phẩm khô
+										li 
+											a(href="#") Gạo - Ngũ cốc - Bột
+										li 
+											a(href="#") Thực phẩm bổ dưỡng
+										li 
+											a(href="#") Bánh kẹo - Đồ ăn vặt
+										li 
+											a(href="#") Giải khát
+							li.hassub
+								a(href="#") Nhà cửa & đời sống
+								.btn-showsubfilter <i class="fa fa-angle-right" aria-hidden="true"></i>
+								.sub
+									ul 
+										li 
+											a(href="#") Đồ dùng gia đình
+										li 
+											a(href="#") Chăm - ga - gối - nệm
+										li 
+											a(href="#") Vật dụng nhà bếp - Phòng ăn
+										li 
+											a(href="#") Đồ nhựa
+										li 
+											a(href="#") Vật dụng vệ sinh nhà cửa
+										li 
+											a(href="#") Hóa phẩm - Chất tẩy
+							li
+								a(href="#") Sức khỏe & sắc đẹp
+								.btn-showsubfilter <i class="fa fa-angle-right" aria-hidden="true"></i>
+								.sub
+									ul 
+										li 
+											a(href="#") Trang điểm
+										li 
+											a(href="#") Nước hoa
+										li 
+											a(href="#") Chăm sóc mặt
+										li 
+											a(href="#") Chăm sóc tóc
+										li 
+											a(href="#") Chăm sóc toàn thân
+										li 
+											a(href="#") Chăm sóc cá nhân
+										li 
+											a(href="#") Tinh dầu Spa
+										li 
+											a(href="#") Thiết bị y tế
+							li
+								a(href="#") Mẹ & bé
+								.btn-showsubfilter <i class="fa fa-angle-right" aria-hidden="true"></i>
+								.sub
+									ul 
+										li 
+											a(href="#") Sữa & Bột cho bé
+										li 
+											a(href="#") Đồ dùng ăn uống cho bé
+										li 
+											a(href="#") Vệ sinh chăm sóc cho bé
+										li 
+											a(href="#") Quần áo sơ sinh (dưới 36 tháng tuổi)
+										li 
+											a(href="#") Đồ chơi & Đồ dùng trẻ em
+										li 
+											a(href="#") Xe & các thiết bị an toàn
+										li 
+											a(href="#") Thời trang cho mẹ
+										li 
+											a(href="#") Chăm sóc cho mẹ
+							li
+								a(href="#") Thời trang
+								.btn-showsubfilter <i class="fa fa-angle-right" aria-hidden="true"></i>
+								.sub
+									ul 
+										li 
+											a(href="#") Thời trang nam
+										li 
+											a(href="#") Thời trang nữ
+										li 
+											a(href="#") Thời trang trẻ em
+										li 
+											a(href="#") Phụ kiện nam
+										li 
+											a(href="#") Phụ kiện nữ
+							li
+								a(href="#") Sách & văn phòng phẩm
+								.btn-showsubfilter <i class="fa fa-angle-right" aria-hidden="true"></i>
+								.sub
+									ul 
+										li 
+											a(href="#") Sách
+										li 
+											a(href="#") Văn phòng phẩm
+										li 
+											a(href="#") Quà tặng
+										li 
+											a(href="#") Băng đĩa
+										li 
+											a(href="#") Nhạc cụ
+							li
+								a(href="#") Bánh mỳ - Bánh ngọt
+								.btn-showsubfilter <i class="fa fa-angle-right" aria-hidden="true"></i>
+								.sub
+									ul 
+										li 
+											a(href="#") Điện gia dụng
+										li 
+											a(href="#") Điện gia dụng nhà bếp
+										li 
+											a(href="#") Điện gia dụng gia đình
+										li 
+											a(href="#") Thiết bị vệ sinh - Chăm sóc gia đình
+										li 
+											a(href="#") Thiết bị điện thông minh
+										li 
+											a(href="#") Thiết bị điện khác
+							//- li
+								a(href="#") Gạo - Ngũ cốc - Bột
+								.btn-showsubfilter <i class="fa fa-angle-right" aria-hidden="true"></i>
+								.sub
+									ul 
+										li 
+											a(href="#") Gạo
+										li.active
+											a(href="#") Ngũ cốc
+										li 
+											a(href="#") Bột
+							//- li
+								a(href="#") Thực phẩm bổ dưỡng
+								.btn-showsubfilter <i class="fa fa-angle-right" aria-hidden="true"></i>
+								.sub
+									ul 
+										li 
+											a(href="#") Thực phẩm bổ dưỡng 1
+										li.active
+											a(href="#") Thực phẩm bổ dưỡng 2
+										li 
+											a(href="#") Thực phẩm bổ dưỡng 3
+							//- li
+								a(href="#") Bánh kẹo, Đồ ăn vặt, Giải khát
+								.btn-showsubfilter <i class="fa fa-angle-right" aria-hidden="true"></i>
+								.sub
+									ul 
+										li 
+											a(href="#") Bánh kẹo
+										li.active
+											a(href="#") Đồ ăn vặt
+										li 
+											a(href="#") Giải khát
+				.btn-closefilter.btn-close <span class="lnr lnr-cross"></span> Đóng bộ lọc
+			.filter-wrap.filter-properties.clearfix
+				.btn-closefilter <span class="lnr lnr-cross"></span>
+				//- .filter-group.clearfix
+					.filter-title 
+						span Thương hiệu
+						.btn-reset <i class="fa fa-undo" aria-hidden="true"></i>
+					nav.brand-category
+						ul
+							li
+								a.active(href="#") Apple
+							li
+								a(href="#") Asus
+							li
+								a(href="#") Fitbit
+							li
+								a(href="#") Garmin
+							li
+								a.active(href="#") Huawei
+							li
+								a(href="#") Michael Kors
+							li
+								a.active(href="#") Motorola
+							li
+								a(href="#") Movado
+							li
+								a(href="#") Pebble
+							li
+								a(href="#") Sony
+							li
+								a(href="#") Ticwatch
+				//- .filter-group.clearfix
+					.filter-title 
+						span Nhà phân phối
+						.btn-reset <i class="fa fa-undo" aria-hidden="true"></i>
+					nav.brand-category
+						ul
+							li
+								a.active(href="#") Co.opmart
+				//- .filter-group.clearfix
+					.filter-title 
+						span Nổi bật
+						.btn-reset <i class="fa fa-undo" aria-hidden="true"></i>
+					nav.brand-category
+						ul
+							li
+								a.active(href="#") Khuyến mại
+							li
+								a(href="#") Hàng mới về
+							li
+								a(href="#") Hàng nhập khẩu
+				//- .filter-group.clearfix
+					.filter-title 
+						span Kích cỡ
+						.btn-reset <i class="fa fa-undo" aria-hidden="true"></i>
+					.product-size
+						.size
+							a.ajaxlink(href="#") 38
+						.size
+							a.ajaxlink(href="#") 42
+						.size
+							a.ajaxlink(href="#") 20
+						.size
+							a.ajaxlink(href="#") 22
+						.size
+							a.ajaxlink.active(href="#") S
+						.size
+							a.ajaxlink(href="#") L
+				//- .filter-group.clearfix
+					.filter-title 
+						span Màu sắc
+						.btn-reset <i class="fa fa-undo" aria-hidden="true"></i>
+					.color-picker
+						.color
+							a.ajaxlink(href='#', data-toggle="tooltip" data-placement="right" title="Trắng")
+								.color-img(style="background: #fff")
+						.color
+							a.ajaxlink(href='#', data-toggle="tooltip" data-placement="right" title="Đen")
+								.color-img(style="background: #000")
+						.color
+							a.ajaxlink.active(href='#', data-toggle="tooltip" data-placement="right" title="Đỏ")
+								.color-img(style="background: #ED0000")
+						.color
+							a.ajaxlink(href='#', data-toggle="tooltip" data-placement="right" title="Cam")
+								.color-img(style="background: #FF8800")
+						.color
+							a.ajaxlink(href='#', data-toggle="tooltip" data-placement="right" title="Tím")
+								.color-img(style="background: #8833ee")
+						.color
+							a.ajaxlink(href='#', data-toggle="tooltip" data-placement="right" title="Xanh dương")
+								.color-img(style="background: #4B98D5")
+						.color
+							a.ajaxlink(href='#', data-toggle="tooltip" data-placement="right" title="Xám đen")
+								.color-img(style="background: #666666")
+						.color
+							a.ajaxlink(href='#', data-toggle="tooltip" data-placement="right" title="Xanh lá")
+								.color-img(style="background: #8BC34A")
+				.filter-group.clearfix
+					.filter-title 
+						span Khoảng giá
+						.btn-reset <i class="fa fa-undo" aria-hidden="true"></i>
+					.filter-range
+						#slider-range.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all(aria-disabled='false')
+							.ui-slider-range.ui-widget-header.ui-corner-all(style='left: 0%; width: 100%;')
+							a.ui-slider-handle.ui-state-default.ui-corner-all(href='#', style='left: 0%;')
+							a.ui-slider-handle.ui-state-default.ui-corner-all(href='#', style='left: 100%;')
+						.price-range
+							| Giá từ
+							.sliderValue.min-input(data-index='0') 0
+							| đến
+							.sliderValue.max-input(data-index='1') 10.000.000
+						.hidden
+							a.urlwithoutprice(href='#')
+							a.urlwithprice(href='#')
+							a.pricemin
+							a.pricemax
+				.btn-closefilter.btn-close <span class="lnr lnr-cross"></span> Đóng bộ lọc
+
+		section.product-page.clearfix
+			.btn-togglewrap
+				.btn-showcate Danh mục sản phẩm
+				.btn-showfilter Lọc sản phẩm
+			include bannerads
+			.product-sort.clearfix
+				h1.pagetitle Quả
+					span.amount Tìm thấy 60 sản phẩm
+				.sorttype
+					select
+						option(value="#") Sắp xếp theo
+						option(value="#") Bán chạy nhất
+						option(value="#") Hàng mới về
+						option(value="#") Giá cao nhất
+						option(value="#") Giá thấp nhất
+			.product-list.flex.flex-wrap.clearfix
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.col-xs-6.col-sm-4.col-md-3.col-lg-4.col-xl-3.nopadding
+					.product-col
+						figure
+							a.product-img(href="#")
+								img(src="img/product/1.jpg", alt="alt")
+								.hover-img
+									img(src="img/product/2.jpg", alt="")
+								.promotion
+									.new
+										span Mới
+									.hot
+										span hot
+									.sale 
+										span 15%
+							figcaption
+								h3.product-name
+									a(href="#") Táo Gala size 100 - 125 (XX Mỹ) 0.6 kg
+								.product-des 450ml
+								.product-price
+									.new 100.000đ
+									.old 150.000đ
+								.btn-wrap
+									a.btn-addtocart(href="#") Thêm vào giỏ
+				.pages
+					ul.pagination
+						li.active
+							a(href="#") 1
+						li 
+							a(href="#") 2
+						li 
+							a(href="#") 3
+						li 
+							a(href="#") 4

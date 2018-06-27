@@ -1,0 +1,113 @@
+.page-content
+	.pages
+		.pagination
+			margin: 15px 0
+	.news-list
+		// border-bottom: 1px solid darken($white,10%)
+		article
+			margin-bottom: 30px
+	.news-col
+		// border-bottom: 1px solid darken($white,10%)
+		figure
+			.news-img
+				// width: 45%
+				// float: left
+				display: block
+				+pos(rel,null)
+				overflow: hidden
+				img
+					width: 100%
+					+transition(all,0.5s)
+			figcaption
+				// width: calc(100% - 45%)
+				// float: left
+				padding: 15px 0
+				+pos(rel,null)
+				time
+					display: block
+					+pos(abs, 15px null null -20px)
+					+transform(translateX(-100%))
+					background: $yellow
+					color: $white
+					padding: 5px 10px
+					+fs(13rem)
+					font-weight: 700
+					+media-breakpoint-down(sm)
+						+pos(static,null)
+						+transform(translateX(0%))
+						margin-bottom: 10px
+						display: inline-block
+				.news-name
+					+fs(16rem)
+					font-weight: 500
+					text-transform: uppercase
+					line-height: 1.5
+					margin-bottom: 10px
+					a 
+						color: $red
+						&:hover
+							color: $red
+				.news-des
+					color: darken($white,60%)
+					margin-bottom: 20px
+					+fs(14rem)
+					+media-breakpoint-down(lg)
+						// max-height: 45px
+						// overflow: hidden
+					+media-breakpoint-down(md)
+						// max-height: unset
+				.link
+					// font-weight: 700
+					// text-transform: uppercase
+					color: darken($white,60%)
+					&:after 
+						content: '\f105'
+						font-family: 'fontawesome'
+						margin-left: 5px
+					&:hover
+						color: $yellow
+						letter-spacing: 1px
+			&:hover
+				.news-img
+					img 
+						// +transform(scale3d(1.1,1.1,1))
+				figcaption
+					.news-name
+						a 
+							// color: $red
+
+.othertitle
+	+fs(16rem)
+	font-weight: 500
+	border-left: 3px solid $red
+	padding-left: 10px
+	margin-bottom: 20px
+.other-news
+	padding-top: 20px
+	.newslist
+		.news
+			border-bottom: 1px dashed darken($white,10%)
+			padding: 10px 0
+			figure
+				display: flex
+				flex-wrap: wrap
+				.newsimg
+					width: 80px
+					img
+				figcaption
+					width: calc(100% - 80px)
+					padding-left: 15px
+					.newsname
+						font-weight: 500
+						margin-bottom: 5px
+						a 
+							color: $red
+							&:hover
+								color: $yellow
+					time 
+						display: inline-block
+						background: darken($white,10%)
+						+fs(13rem)
+						font-weight: 500
+						color: $main
+						padding: 0px 5px
